@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebula</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #g1 {
+            position: relative;
+        }
+
+        #wrapper {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            overflow-x: hidden;
+            margin: 0%;
+            padding: 0;
+            perspective: 10px;
+        }
+
+        .container {
+            /* position: relative;
+                    height: 100%;
+                    display: flex;
+                    justify-content:center ;
+                    align-items: center;
+                    transform-style:preserve-3d ;
+                    z-index: -1; */
+
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+            z-index: -1;
+
+        }
+
+        #back {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            object-fit: cover;
+            transform: translateZ(-40px) scale(6);
+        }
+
+
+        #front {
+            position: absolute;
+
+
+
+            top: 0;
+            left: 18%;
+            height: 100px;
+            width: 100px;
+            z-index: -1;
+            object-fit: contain;
+            transform: translateZ(-20px) scale(2.3);
+
+        }
+
+        .img1 {
+            position: absolute;
+            left: 10;
+            top: 0;
+            height: 700px;
+            animation: floating 3s infinite ease-in-out;
+        }
+
+        @keyframes floating {
+
+            0% {
+                transform: translate(0, 0px);
+            }
+
+            50% {
+                transform: translate(0, 35px);
+            }
+
+            100% {
+                transform: translate(0, -0px);
+            }
+        }
+
+        #logo {
+            position: absolute;
+            top: 15%;
+            left: 45%;
+            width: 180px;
+        }
+section{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    padding:5rem 0;
+}
+h1{
+    text-align: center;    font-size:40px;
+    letter-spacing:4px;
+    color:white;
+    text-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+.secHeading1{
+   
+    font-size:5rem;
+    padding:0 10rem;
+}
+
+.text{
+    font-size:1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+
+.text1{
+    font-size:30;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.bg{
+    position:relative;
+    width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height:500px;
+}
+
+.desc{
+    position: absolute;
+    background-color: white;   
+    padding: 0.5rem 2.5rem;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateX(-50%);
+    color:black;
+    font-size:3.5rem;
+    font-weight:600;
+}
+
+.bg1{
+    background-image: url(./pic/wp2981324-deep-wallpaper.jpg);
+}
+
+.bg2{
+    background-image: url(./pic/jeremy-thomas-E0AHdsENmDg-unsplash.jpg);
+}
+
+.bg3{
+    background-image: url(sport-3.jpg);
+}
+
+
+    </style>
+</head>
+
+<body>
+   
+    <div id="wrapper">
+        <div class="container">
+            <video src="./pic/mixkit-spectacular-fluorescent-colored-nebulae-in-universe-31596-large.mp4" id="back" 
+                autoplay loop muted></video>></video>
+            <img src="./pic/WhatsApp_Image_2023-06-06_at_10.57.10_AM-removebg-preview.png" id="logo">
+            <div id="front">
+                <img src="./pic/ai-generated-concept-human.png" class="img1">
+            </div>
+        </div>
+        <section>
+            <h1 class=".secHeading1"> Hey, Companions</h1>
+            <p class="text1">Get Ready
+            </p>
+
+            <div class="bg bg1">
+           
+            </div>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui necessitatibus commodi alias? Veritatis, eligendi nisi. Amet exercitationem, recusandae dolore corrupti laborum aperiam repellendus natus voluptatem quam atque aliquam beatae. Odit deserunt nisi optio eveniet? Aliquam possimus molestiae, ullam illum accusamus autem accusantium! Voluptate laboriosam eum saepe ex veritatis est? Numquam eaque autem labore provident dolorum, velit omnis mollitia eos adipisci!
+                <br> <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, itaque hic tempore rem eveniet sed repudiandae molestiae magnam aut quod consequatur, harum, totam beatae fugiat ipsam? Explicabo, blanditiis quod similique fugiat fugit ea expedita deleniti doloribus, delectus perferendis, tempore amet maiores libero sapiente voluptatem reprehenderit? Illum alias commodi cupiditate corporis mollitia ab quaerat, ipsum est excepturi vitae a sunt optio.
+            </p>
+
+            <div class="bg bg2">
+            </div>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui necessitatibus commodi alias? Veritatis, eligendi nisi. Amet exercitationem, recusandae dolore corrupti laborum aperiam repellendus natus voluptatem quam atque aliquam beatae. Odit deserunt nisi optio eveniet? Aliquam possimus molestiae, ullam illum accusamus autem accusantium! Voluptate laboriosam eum saepe ex veritatis est? Numquam eaque autem labore provident dolorum, velit omnis mollitia eos adipisci!
+                <br> <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, itaque hic tempore rem eveniet sed repudiandae molestiae magnam aut quod consequatur, harum, totam beatae fugiat ipsam? Explicabo, blanditiis quod similique fugiat fugit ea expedita deleniti doloribus, delectus perferendis, tempore amet maiores libero sapiente voluptatem reprehenderit? Illum alias commodi cupiditate corporis mollitia ab quaerat, ipsum est excepturi vitae a sunt optio.
+            </p>
+
+
+
+        </section>
+
+    </div>
+
+    
+    
+
+</body>
+
+</html>
